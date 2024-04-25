@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+
+         
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 1920px;
+  height: 951px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 200%;
+  opacity: 0;
+  transition: 5s ease;
+  
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+    </style>
+
+
+  <div class="container">
+    <img src="image.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Dikkemooiehond🐶</div>
+    </div>
+  </div>
+
+
+
 
 
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Picture Page</title>
+    <title>Dikkemooiehond</title>
      
 </head>
-<body>
-    <div class="container">
-        <div class="picture">
-
-        </div>
-    </div>
-</body>
 </html>
