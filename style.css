@@ -5,45 +5,42 @@ body{
 }    
 
 .container {
-  position: relative;
-  width: 50%;
+  height: 100vh;
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
-.image {
-  display: block;
-  width: 1920px;
-  height: 951px;
-  transition: backdrop-filter 2s;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80%;
-  width: 200%;
-  opacity: 0;
-  transition: 2s ease;
-  
-
-}
+ 
 .image:hover{
   backdrop-filter: blur(10px);
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
 
 .text {
   color: white;
   font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+  font-family:"Rubik", sans-serif;
+  text-transform: uppercase;
 
+  
+}
+.backdrop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  width: 650px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(13.3px);
+}
