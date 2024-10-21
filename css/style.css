@@ -295,3 +295,85 @@ footer {
         }
     }
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigatiebalk onderaan */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b1a1a;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Foto-sectie */
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 60px); /* Rekening houden met de hoogte van de navigatiebalk */
+    gap: 2rem;
+}
+
+.photo-section img {
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.side-photo {
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#dog-photo {
+    width: 600px; /* Pas de breedte aan zoals je wilt */
+    height: auto; /* Zorgt ervoor dat de hoogte automatisch wordt aangepast */
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dog-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
