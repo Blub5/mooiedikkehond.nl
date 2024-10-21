@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dikke Hond</title>
+</head>
+<body>
+
+    <div class="page-container">
+    <div class="background-image" id="dog-photo"></div>
+    <div class="contents-text" id="text">
+        <section id="contact">
+
+            <h1 class="no-select">Neem Contact Op</h1>
+        
+            <div class="feedback" id="feedback" style="display: none;"></div>
+        
+            <form action="https://formspree.io/f/myzyzkna" method="POST" class="contact-form" id="contact-form">
+                <input type="text" name="name" id="name" placeholder="Naam" required aria-required="true">
+                <input type="email" name="email" id="email" placeholder="Email" required aria-required="true">
+                <textarea name="message" id="message" placeholder="Uw Bericht" required aria-required="true" style="resize: none; height: 150px;"></textarea>
+                <button type="submit">Stuur e-mail</button>
+            </form>
+        </section>
+      
+    </div>
+    </div>
+    
+    <div class="bottom-info">
+        <a href="index.html" target="_blank">home</a>
+        <a href="#">-</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="#">-</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="#">-</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p id="year"></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
