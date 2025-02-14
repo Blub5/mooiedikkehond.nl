@@ -2,39 +2,67 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dikke Hond</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/dog-face_1f436.png">
     <link rel="stylesheet" href="css/style.css">
+    <title>Dikke Hond</title>
+    <style>
+        .title {
+            color: white;
+            font-family: "rubik", sans-serif;
+            font-size: 3vw;
+            text-transform: uppercase;
+        }
+        .subtext {
+            color: white;
+            font-family: "rubik", sans-serif;
+            font-size: 2vw;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigatiebalk -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Over</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hoofdgedeelte -->
-    <main>
-        <section class="photo-section">
-            <a href="https://www.instagram.com/walterthebloodhound21/" target="_blank"> <!-- Vervang met jouw URL -->
-                <img class="side-photo" src="images/Dikkehond2.jpg" alt="Foto 1"> <!-- Linker afbeelding -->
-            </a>
-
-            <a href="https://www.bonfire.com/store/walter-the-bloodhound/" target="_blank"> <!-- Vervang met jouw URL -->
-                <img id="dog-photo" src="Dikkehond2.jpg" alt="Dikke Hond"> <!-- Hoofdafbeelding -->
-            </a>
-
-            <a href="https://www.tiktok.com/@waltiesthebloodhound/video/7312713003005234465" target="_blank"> <!-- Vervang met jouw URL -->
-                <img class="side-photo" src="images/Dikkehond2.jpg" alt="Foto 2"> <!-- Rechter afbeelding -->
-            </a>
-        </section>
-    </main>
-
-    <script src="js/randomimg.js"></script>
+    <div class="page-container">
+        <div class="background-image" id="Dikkehond2"></div>
+        <div class="contents-text" id="text">
+            <h1 class="title">Walter the Bloodhound</h1>
+            <h2 class="subtext">he/him/good boy</h2>
+            <div class="line">
+                <p class="word">Loves</p>
+                <p class="word">walks</p>
+            </div>
+            <div class="line">
+                <p class="word">pure</p>
+                <p class="word">bred</p>
+                <p class="word">good</p>
+                <p class="word">boy</p>
+            </div>
+            <div class="line">
+                <p class="word">Loves</p>
+                <p class="word">eating</p>
+            </div>
+            <div class="line">
+                <p class="word">Birthday:</p>
+                <p class="word">11/17/2021</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-info">
+        <a href="index.html">home</a>
+        <a href="#">-</a>
+        <a href="https://www.facebook.com/watch/?ref=search&v=1546170089209216" target="_blank">Facebook</a>
+        <a href="#">-</a>
+        <a href="https://www.tiktok.com/@waltiesthebloodhound" target="_blank">TikTok</a>
+        <a href="#">-</a>
+        <a href="https://www.instagram.com/walterthebloodhound21/" target="_blank">Instagram</a>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p id="year"></p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
