@@ -51,12 +51,12 @@ const dogInfo = [
     startDogInterval();
   
     // Add keyboard shortcut (press 'n' to see next dog)
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'n') {
-        clearInterval(dogInterval);
-        changeDogOfMonthImage();
-        startDogInterval();
-      }
-    });
+   // document.addEventListener('keydown', function(event) {
+     // if (event.key === 'n') {
+       // clearInterval(dogInterval);
+       // changeDogOfMonthImage();
+       // startDogInterval();
+     // }
+    //});
   });
   
