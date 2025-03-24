@@ -1,9 +1,9 @@
 const dogInfo = [
-    { name: "Walter", breed: "Bloodhound", age: 3, favoriteToy: "Tennis ball", specialTalent: "Expert sniffer", image: "../images/Dikkehond13.jpg" },
-    { name: "Bella", breed: "Golden Retriever", age: 5, favoriteToy: "Frisbee", specialTalent: "Fetching expert", image: "../images/Dikkehond12.jpg" },
-    { name: "Max", breed: "German Shepherd", age: 4, favoriteToy: "Rope toy", specialTalent: "Guarding", image: "../images/Dikkehond11.jpg" },
-    { name: "Lucy", breed: "Beagle", age: 2, favoriteToy: "Squeaky toy", specialTalent: "Tracking", image: "../images/Dikkehond10.jpg" },
-    { name: "Charlie", breed: "Poodle", age: 6, favoriteToy: "Plush toy", specialTalent: "Performing tricks", image: "../images/Dikkehond9.jpg" }
+    { name: "Walter", breed: "Bloodhound", age: 3, favoriteToy: "Tennis ball", specialTalent: "Expert sniffer", image: "../images/Dikkehond8.jpg" },
+    { name: "Doge", breed: "Dikzak", age: 5, favoriteToy: "Frisbee", specialTalent: "Fetching expert", image: "../images/vetzak1.png" },
+    { name: "Max", breed: "Goofy", age: 4, favoriteToy: "Rope toy", specialTalent: "Guarding", image: "../images/vetzak2.png" },
+    { name: "Walter2", breed: "Vetzak", age: 2, favoriteToy: "Squeaky toy", specialTalent: "Tracking", image: "../images/vetzak3.png" },
+    { name: "Walter", breed: "Witte", age: 6, favoriteToy: "Plush toy", specialTalent: "Performing tricks", image: "../images/vetzak4.png" }
   ];
   
   let currentDogOfMonthIndex = 0;
