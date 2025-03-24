@@ -1,29 +1,29 @@
-body{
-    margin: auto;
-    padding: auto;
+body {
+    margin: 0;
+    padding: 0;
     background-color: #000000;
-    overflow: hidden;
-}
-
-.title {
-    color: white;
+    overflow-x: hidden;
     font-family: "rubik", sans-serif;
+  }
+  
+  .title {
+    color: white;
     font-size: 3vw;
     text-transform: uppercase;
-}
-.subtext {
+  }
+  
+  .subtext {
     color: white;
-    font-family: "rubik", sans-serif;
     font-size: 2vw;
     text-transform: uppercase;
-}
-
-.page-container{
+  }
+  
+  .page-container {
     display: flex;
     flex-direction: row;
-}
-
-.background-image {
+  }
+  
+  .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,29 +32,29 @@ body{
     background-size: cover;
     background-position: top center;
     animation: 2s ease 0s 1 onstart-scale;
-}
-
-@keyframes onstart-scale {
+  }
+  
+  @keyframes onstart-scale {
     from {
-        transform: scale(1.5);
-        opacity: 0;
+      transform: scale(1.5);
+      opacity: 0;
     }
     to {
-        transform: scale(1);
-        opacity: 1;
+      transform: scale(1);
+      opacity: 1;
     }
-}
-
-@keyframes fade-out {
+  }
+  
+  @keyframes fade-out {
     from {
-        opacity: 1;
+      opacity: 1;
     }
     to {
-        opacity: 0;
+      opacity: 0;
     }
-}
-
-.contents-text {
+  }
+  
+  .contents-text {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -62,43 +62,39 @@ body{
     width: 25vw;
     height: 100vh;
     padding: 100px;
-    -webkit-box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
-    -moz-box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
     box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
     animation: 2s ease 0s 1 onstart-with;
     right: 0;
     top: 0;
-}
-
-
-p{
+  }
+  
+  .contents-text p {
     color: white;
     font-size: 2vw;
-    font-family: "rubik", sans-serif;
-    margin: 0rem;
+    margin: 0;
     text-transform: uppercase;
-}
-
-.line{
+  }
+  
+  .line {
     display: flex;
     justify-content: space-between;
-}
-
-.word {
+  }
+  
+  .word {
     transition: opacity 0.3s ease;
     cursor: default;
-}
-
-.link{
+  }
+  
+  .link {
     text-decoration: none;
     color: rgb(167, 167, 167);
-}
-
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  }
+  
+  #text:has(.fancy:hover) .word:not(.fancy:hover) {
     opacity: 0.2;
-}
-
-.bottom-info {
+  }
+  
+  .bottom-info {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -110,83 +106,79 @@ p{
     z-index: 10;
     left: 0;
     bottom: 0;
-}
-
-.bottom-info a{
-    color:#1b1a1a;
+  }
+  
+  .bottom-info a {
+    color: #1b1a1a;
     font-size: 3vw;
-    font-family: "rubik", sans-serif;
-    margin: 0rem;
+    margin: 0;
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 20px;
     transition: transform .3s;
-}
-
-.bottom-info a:hover{
+  }
+  
+  .bottom-info a:hover {
     transform: scale(1.03);
-    color:#686464;
-}
-
-@keyframes onstart-with {
+    color: #686464;
+  }
+  
+  @keyframes onstart-with {
     0% {
-        width: 100vw;
-        opacity: 0;
+      width: 100vw;
+      opacity: 0;
     }
     50% {
-        width: 50vw;
-        opacity: 1;
+      width: 50vw;
+      opacity: 1;
     }
-}
-
-footer {
-    color:#1b1a1a;
+  }
+  
+  footer {
+    color: #1b1a1a;
     padding: 5px;
-
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2;
     z-index: 11;
-}
-
-.footer-bottom p {
-    color:#1b1a1a;
+  }
+  
+  .footer-bottom p {
+    color: #1b1a1a;
     font-size: 10px;
-}
-
-#contact {
+  }
+  
+  #contact {
     color: white;
     padding: 40px 20px;
     text-align: center;
-}
-
-#contact h1{
+  }
+  
+  #contact h1 {
     color: white;
     font-size: 3vw;
-    font-family: "rubik", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.feedback {
+  }
+  
+  .feedback {
     margin-top: 20px;
     padding: 10px;
     color: #ffffff;
     display: none;
-}
-
-
-.contact-form {
+  }
+  
+  .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     gap: 1rem;
-}
-
-.contact-form input, .contact-form textarea {
+  }
+  
+  .contact-form input, .contact-form textarea {
     width: 300px;
     padding: 12px;
     border: none;
@@ -195,15 +187,14 @@ footer {
     font-size: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: border-color 0.3s;
-
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     border: 1px solid #ffffff;
-}
-
-.contact-form button {
+  }
+  
+  .contact-form button {
     background-color: #585858;
     color: white;
     padding: 12px 20px;
@@ -212,187 +203,145 @@ footer {
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-.contact-form button:hover {
+  }
+  
+  .contact-form button:hover {
     background-color: #ff2d2d;
     transform: scale(1.05);
-}
-
-.contact-form button:active {
+  }
+  
+  .contact-form button:active {
     transform: scale(0.95);
-}
-
-
-@media (max-width: 768px){
-    .page-container{
-        display: flex;
-        flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .page-container {
+      display: flex;
+      flex-direction: column;
     }
-
-    .contents-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: fixed;
-        background-color: #1b1a1a79;
-        backdrop-filter: blur(5.3px);
-        padding: 0px;
-        width: 100vw;
-        height:50vh;
-        -webkit-box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
-        -moz-box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
-        box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
-        animation: 2s ease 0s 1 onstart-with;
+  
+    .contents-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      background-color: rgba(27, 26, 26, 0.7);
+      backdrop-filter: blur(5.3px);
+      padding: 0px;
+      width: 100vw;
+      height: 50vh;
+      box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
+      animation: 2s ease 0s 1 onstart-with;
     }
-
-    p{
-        color: white;
-        font-size: 6vw;
-        font-family: "rubik", sans-serif;
-        margin: rem;
-        text-transform: uppercase;
+  
+    .contents-text p {
+      font-size: 6vw;
+      margin: 0.5rem;
     }
-
-    .background-image{
-        position: relative;
-        width:100%;
-        height:50vh;
-        animation: 2s ease 0s 1 onstart-scale;
+  
+    .background-image {
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      animation: 2s ease 0s 1 onstart-scale;
     }
-
+  
     .bottom-info {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        gap: 3vw;
-        position: fixed;
-        left: 0;
-        bottom: 0;
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .bottom-info a {
+      font-size: 4vw;
+    }
+  
+    @keyframes onstart-with {
+      0% {
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+      }
+      50% {
         width: 100%;
         height: 50vh;
-        background-color: #dddbdb;
-        z-index: 10;
+        opacity: 1;
+      }
     }
-
-    @keyframes onstart-with {
-        0% {
-            width: 100%;
-            height: 100vh;
-            opacity: 0;
-        }
-        50% {
-            width: 100%;
-            height: 50vh;
-            opacity: 1;
-        }
-    }
-
-    @keyframes onstart-scale {
-        from {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes fade-out {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-}
-
-/* Navigatiebalk onderaan */
-.navbar {
+  }
+  
+  .navbar {
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #1b1a1a;
     text-align: center;
-}
-
-.navbar ul {
+  }
+  
+  .navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.navbar li {
+  }
+  
+  .navbar li {
     display: inline;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
-}
-
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     color: #ffcc00;
-}
-
-/* Foto-sectie */
-.photo-section {
+  }
+  
+  .photo-section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: calc(100vh - 60px); /* Rekening houden met de hoogte van de navigatiebalk */
+    height: calc(100vh - 60px);
     gap: 2rem;
-}
-
-.photo-section img {
+  }
+  
+  .photo-section img {
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.photo-section img:hover {
+  }
+  
+  .photo-section img:hover {
     transform: scale(1.1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.side-photo {
+  }
+  
+  .side-photo {
     height: 500px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-#dog-photo {
-    width: 600px; /* Pas de breedte aan zoals je wilt */
-    height: auto; /* Zorgt ervoor dat de hoogte automatisch wordt aangepast */
+  }
+  
+  #dog-photo {
+    width: 600px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#dog-photo:hover {
+  }
+  
+  #dog-photo:hover {
     transform: scale(1.1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-/* Dog of the Week/Month Section */
-.dog-of-month {
+  }
+  
+  .dog-of-month {
     background-color: #1b1a1a;
     border-radius: 15px;
     padding: 30px;
@@ -404,7 +353,6 @@ body {
   
   .dog-of-month h2 {
     color: white;
-    font-family: "rubik", sans-serif;
     font-size: 2.5vw;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -435,7 +383,6 @@ body {
   
   .dog-of-month-info h3 {
     color: white;
-    font-family: "rubik", sans-serif;
     font-size: 1.8vw;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -444,7 +391,6 @@ body {
   .dog-of-month-info p {
     color: #dddbdb;
     font-size: 1.2vw;
-    font-family: "rubik", sans-serif;
     margin-bottom: 8px;
     text-transform: none;
   }
@@ -452,29 +398,27 @@ body {
   .dog-of-month-date {
     color: #686464;
     font-size: 1vw;
-    font-family: "rubik", sans-serif;
     font-style: italic;
     margin-top: 15px;
   }
   
-  /* Mobile responsiveness for Dog of the Month */
   @media (max-width: 768px) {
     .dog-of-month h2 {
       font-size: 6vw;
     }
-    
+  
     .dog-of-month-content {
       flex-direction: column;
     }
-    
+  
     .dog-of-month-info h3 {
       font-size: 4vw;
     }
-    
+  
     .dog-of-month-info p {
       font-size: 3vw;
     }
-    
+  
     .dog-of-month-date {
       font-size: 2.5vw;
     }
