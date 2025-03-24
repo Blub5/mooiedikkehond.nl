@@ -1,29 +1,29 @@
-// Lijst van afbeeldingsbestanden
+// List of image files
 const images = [
-    'Dikkehond2.jpg', // Voeg hier de namen van je afbeeldingen toe
-    'Dikkehond3.jpg',
-    'Dikkehond4.jpg',
-    'Dikkehond5.jpg',
-    'Dikkehond6.jpg',
-    'Dikkehond7.jpg'
+    '../images/Dikkehond2.jpg',
+    '../images/Dikkehond3.jpg',
+    '../images/Dikkehond4.jpg',
+    '../images/Dikkehond5.jpg',
+    '../images/Dikkehond6.jpg',
+    '../images/Dikkehond7.jpg'
 ];
 
 let currentIndex = 0;
 
-// Functie om de afbeelding te veranderen
+// Function to change the image
 function changeImage() {
-    // Selecteer het afbeeldingselement
+    // Select the image element
     const imgElement = document.getElementById('dog-photo');
-
-    // Verander de src naar de huidige afbeelding
-    imgElement.src = "images/"+images[currentIndex];
-
-    // Update de index voor de volgende afbeelding
-    currentIndex = (currentIndex + 1) % images.length; // Zorgt ervoor dat het terugloopt naar het begin
+    
+    // Change the src to the current image
+    imgElement.src = images[currentIndex];
+    
+    // Update the index for the next image
+    currentIndex = (currentIndex + 1) % images.length;
 }
 
-// Start de verandering van de afbeelding
+// Start changing the image
 changeImage();
 
-// Verander de afbeelding elke 10 seconden (10 * 1000 milliseconden)
+// Change the image every 10 seconds (10 * 1000 milliseconds)
 setInterval(changeImage, 10 * 1000);

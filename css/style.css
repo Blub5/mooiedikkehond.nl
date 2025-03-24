@@ -5,6 +5,19 @@ body{
     overflow: hidden;
 }
 
+.title {
+    color: white;
+    font-family: "rubik", sans-serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+.subtext {
+    color: white;
+    font-family: "rubik", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
 .page-container{
     display: flex;
     flex-direction: row;
@@ -377,3 +390,93 @@ body {
     transform: scale(1.1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+/* Dog of the Week/Month Section */
+.dog-of-month {
+    background-color: #1b1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .dog-of-month h2 {
+    color: white;
+    font-family: "rubik", sans-serif;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .dog-of-month-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .dog-of-month img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .dog-of-month img:hover {
+    transform: scale(1.05);
+  }
+  
+  .dog-of-month-info {
+    text-align: left;
+  }
+  
+  .dog-of-month-info h3 {
+    color: white;
+    font-family: "rubik", sans-serif;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .dog-of-month-info p {
+    color: #dddbdb;
+    font-size: 1.2vw;
+    font-family: "rubik", sans-serif;
+    margin-bottom: 8px;
+    text-transform: none;
+  }
+  
+  .dog-of-month-date {
+    color: #686464;
+    font-size: 1vw;
+    font-family: "rubik", sans-serif;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  /* Mobile responsiveness for Dog of the Month */
+  @media (max-width: 768px) {
+    .dog-of-month h2 {
+      font-size: 6vw;
+    }
+    
+    .dog-of-month-content {
+      flex-direction: column;
+    }
+    
+    .dog-of-month-info h3 {
+      font-size: 4vw;
+    }
+    
+    .dog-of-month-info p {
+      font-size: 3vw;
+    }
+    
+    .dog-of-month-date {
+      font-size: 2.5vw;
+    }
+  }
+  
