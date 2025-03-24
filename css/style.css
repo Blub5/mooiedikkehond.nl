@@ -229,7 +229,7 @@ body {
       backdrop-filter: blur(5.3px);
       padding: 0px;
       width: 100vw;
-      height: 50vh;
+      height: 30vh; /* Reduced from 50vh to 30vh */
       box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
       animation: 2s ease 0s 1 onstart-with;
     }
@@ -247,12 +247,13 @@ body {
     }
   
     .bottom-info {
-      height: auto;
-      padding: 10px 0;
+      height: 8vh; /* Reduced from 10vh */
+      padding: 5px 0;
     }
   
     .bottom-info a {
-      font-size: 4vw;
+      font-size: 0.9rem;
+      margin-top: 10px;
     }
   
     @keyframes onstart-with {
@@ -263,7 +264,7 @@ body {
       }
       50% {
         width: 100%;
-        height: 50vh;
+        height: 30vh; /* Adjusted to match new height */
         opacity: 1;
       }
     }
@@ -421,6 +422,20 @@ body {
   
     .dog-of-month-date {
       font-size: 2.5vw;
+    }
+  
+    .navbar {
+      height: auto;
+      padding: 5px 0;
+    }
+  
+    .navbar a {
+      font-size: 1rem;
+      padding: 5px;
+    }
+  
+    .navbar ul {
+      padding: 5px 0;
     }
   }
   
