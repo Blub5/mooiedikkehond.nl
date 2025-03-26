@@ -27,23 +27,21 @@ const dogInfo = [
     }
   }
   
-  // Change the image and info immediately and then every 15 seconds
+
   let dogInterval;
   
   function startDogInterval() {
     changeDogOfMonthImage();
     
-    // Calculate time until the first day of next month
+
     const now = new Date();
     const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
     const timeUntilNextMonth = nextMonth - now;
     
-    // Set initial timeout to trigger exactly at the beginning of next month
     setTimeout(() => {
       changeDogOfMonthImage();
       
-      // Then set interval to run monthly (on the 1st of each month)
-      dogInterval = setInterval(changeDogOfMonthImage, 30 * 24 * 60 * 60 * 1000);
+      dogInterval = setInterval(changeDogOfMonthImage, 24 * 60 * 60 * 1000);
     }, timeUntilNextMonth);
   }
   
