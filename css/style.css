@@ -63,12 +63,13 @@ body {
   background-color: #1b1a1a;
   width: 25vw;
   height: 100vh;
-  padding: 100px;
+  padding: 50px;
   box-shadow: -20px 0px 76px 5px rgb(0, 0, 0);
   animation: 2s ease 0s 1 onstart-with;
   right: 0;
   top: 0;
   overflow-y: auto; /* Add scrolling for mobile */
+  z-index: 5;
 }
 
 .contents-text p {
@@ -80,14 +81,17 @@ body {
 
 .line {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Changed from space-between to flex-start for mobile */
   flex-wrap: wrap; /* Allow wrapping on small screens */
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .word {
   transition: opacity 0.3s ease;
   cursor: default;
-  margin-right: 5px; /* Add space between words */
+  margin-right: 10px; /* Increased spacing between words */
+  margin-bottom: 5px;
 }
 
 .link {
@@ -402,6 +406,7 @@ footer {
       position: relative;
       width: 100%;
       height: auto;
+      min-height: 50vh;
       padding: 30px 20px;
       box-shadow: none;
       box-sizing: border-box;
@@ -412,16 +417,20 @@ footer {
 
   .contents-text p {
       font-size: 5vw;
-      margin: 3px 0;
+      margin: 0 8px 8px 0;
+      display: inline-block;
   }
   
   .line {
-      margin-bottom: 10px;
-      flex-wrap: wrap;
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      text-align: left;
   }
   
   .word {
-      margin-right: 8px;
+      display: inline-block;
+      margin-right: 10px;
       margin-bottom: 5px;
   }
 
